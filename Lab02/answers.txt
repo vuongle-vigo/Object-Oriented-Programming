@@ -1,0 +1,11 @@
+Nếu bạn tạo một phương thức constructor để tạo DVD bằng tiêu đề rồi lại tạo một phương thức constructor để tạo DVD bằng danh mục, Java có cho phép bạn làm điều này không?
+Có, Java cho phép tạo nhiều constructor với các tham số khác nhau, vì đây là một dạng của method overloading. Mỗi constructor sẽ được phân biệt bởi danh sách tham số, do đó, có thể tạo nhiều constructor trong cùng một lớp với các tham số khác nhau.
+
+Tại sao các phương thức getter và setter không nên được tạo tự động cho tất cả các thuộc tính của lớp DigitalVideoDisc?
+Trong lớp DigitalVideoDisc, các thuộc tính là thông tin cơ bản của DVD và không cần thay đổi sau khi đối tượng được tạo. Nếu tự động tạo setter cho tất cả các thuộc tính, người dùng có thể thay đổi các thông tin này, điều này không phù hợp với ngữ cảnh của bài toán. Chỉ cần các getter để truy cập thông tin, còn các setter không cần thiết vì thuộc tính không nên bị thay đổi.
+
+Khi nào thì nên sử dụng phương thức playDemo trong lớp DigitalVideoDisc?
+Phương thức playDemo nên được sử dụng khi cần chạy thử một đoạn demo của DVD. Tuy nhiên, nếu độ dài của DVD là 0 hoặc nhỏ hơn, phương thức sẽ thông báo rằng DVD không thể phát được.
+
+Sự khác nhau giữa composition và aggregation là gì?
+Composition là mối quan hệ "sở hữu" mạnh mẽ hơn giữa hai lớp, nơi mà nếu lớp chủ sở hữu bị xóa, các đối tượng của lớp phụ thuộc cũng sẽ bị xóa theo. Trong khi đó, aggregation là mối quan hệ "tập hợp" yếu hơn, trong đó các đối tượng của lớp phụ thuộc vẫn tồn tại độc lập khi lớp chủ sở hữu bị xóa.

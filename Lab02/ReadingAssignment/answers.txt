@@ -1,0 +1,10 @@
+
+Khi nào nên sử dụng phương thức getter và setter?
+- Getter và setter nên được sử dụng khi thực sự cần thiết, ví dụ khi lớp cần cung cấp quyền truy cập có kiểm soát đến một số thuộc tính. Chỉ nên tạo getter/setter cho những thuộc tính cần được truy cập từ bên ngoài.
+Tại sao không nên lạm dụng getter và setter?
+- Lạm dụng getter và setter sẽ vi phạm nguyên lý đóng gói, làm lộ chi tiết nội bộ của lớp.
+Thay vì sử dụng getter và setter, có thể làm gì khác?
+-Thay vì sử dụng getter và setter, có thể làm gì khác?
+Có thể tạo ra các phương thức hành động để đối tượng tự quản lý trạng thái của nó.
+Khi nào nên dùng đối tượng bất biến?
+- Đối tượng bất biến nên được sử dụng khi giá trị của đối tượng không cần thay đổi sau khi tạo ra.
