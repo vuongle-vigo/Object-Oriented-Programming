@@ -40,6 +40,14 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
+    public String toString() {
+        return title + " - " + category + " - " + director + " - " + length;
+    }
+
+    public boolean isMatch(String title) {
+        return this.title.equalsIgnoreCase(title); 
+    }
+
     public int getId() {
         return id;
     }

@@ -16,6 +16,8 @@ public class Aims {
         cart.addDigitalVideoDisc(dvd2);
         cart.addDigitalVideoDisc(dvd3);
 
+        cart.printCart();
+
         System.out.println("Total cost: " + cart.totalCost());
 
         cart.sortByTitle();
@@ -33,5 +35,7 @@ public class Aims {
         System.out.println("DVD removed from cart.");
 
         dvd2.playDemo();
+
+
     }
 }

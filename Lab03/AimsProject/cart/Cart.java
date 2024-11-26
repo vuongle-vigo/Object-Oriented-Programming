@@ -47,6 +47,19 @@ public class Cart {
                 .thenComparing(DigitalVideoDisc::getTitle));
     }
 
+    public void printCart() {
+        System.out.println("***********************CART***********************");
+        System.out.println("Ordered Items:");
+        double totalCost = 0;
+        for (int i = 0; i < items.size(); i++) {
+            DigitalVideoDisc dvd = items.get(i);
+            System.out.println((i+1) + ". DVD - " + dvd.toString() + ": " + dvd.getCost() + " $");
+            totalCost += dvd.getCost();
+        }
+        System.out.println("Total cost: " + totalCost);
+        System.out.println("***************************************************");
+    }
+    
     public DigitalVideoDisc filterDVDsById(int id) {
         if (id >= 0 && id < items.size()) {
             return items.get(id);
@@ -55,7 +68,27 @@ public class Cart {
             return null;
         }
     }
+    
+    public DigitalVideoDisc searchByID(int id) {
+        for (DigitalVideoDisc dvd : items) {
+            if (dvd.getId() == id) {
+                return dvd;
+            }
+        }
+        System.out.println("No DVD found with the given ID.");
+        return null;
+    }
 
+    public DigitalVideoDisc searchByTitle(String title) {
+        for (DigitalVideoDisc dvd : items) {
+            if (dvd.isMatch(title)) {
+                return dvd;
+            }
+        }
+        System.out.println("No DVD found with the given title.");
+        return null;
+    }
+    
     public DigitalVideoDisc filterDVDsByTitle(String title) {
         for (DigitalVideoDisc disc : items) {
             if (disc.getTitle().equalsIgnoreCase(title)) {
