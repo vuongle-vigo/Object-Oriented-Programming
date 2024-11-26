@@ -11,3 +11,5 @@
     - Java truyền tham số bằng cách sao chép giá trị tham chiếu, không phải bản thân đối tượng.
 + After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed? 
     - Tham chiếu được truyền tới đối tượng cho phép thay đổi trạng thái của đối tượng thông qua các phương thức setter/getter.
++ Write a toString() method for the DigitalVideoDisc class. What should be the return type of this method? 
+    - String
