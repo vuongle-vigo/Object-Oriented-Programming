@@ -1,0 +1,13 @@
++ Thử thêm phương thức addDigitalVideoDisc cho phép truyền một số lượng đối số tùy ý cho dvd. So sánh với tham số mảng. Bạn thích phương thức nào hơn trong trường hợp này?
+    - Mảng (DigitalVideoDisc[]): Đối với mảng, cần phải xác định một mảng các đối tượng trước khi truyền vào phương thức.
+    - Varargs (DigitalVideoDisc... dvds): Varargs cho phép bạn truyền trực tiếp một số lượng đối số không xác định vào phương thức mà không cần phải tạo mảng trước.
+
++ Question: Is JAVA a Pass by Value or a Pass by Reference programming language?  
+    - Java luôn là pass-by-value.
+    - Đối với kiểu nguyên thủy, giá trị của biến được truyền vào phương thức.
+    - Đối với đối tượng, tham chiếu (địa chỉ bộ nhớ) đến đối tượng được truyền theo giá trị, có nghĩa là phương thức có thể thay đổi trạng thái của đối tượng nhưng không thể thay đổi tham chiếu để trỏ đến một đối tượng mới.
+
++ After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain? 
+    - Java truyền tham số bằng cách sao chép giá trị tham chiếu, không phải bản thân đối tượng.
++ After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed? 
+    - Tham chiếu được truyền tới đối tượng cho phép thay đổi trạng thái của đối tượng thông qua các phương thức setter/getter.
