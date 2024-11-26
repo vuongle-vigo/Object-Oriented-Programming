@@ -20,6 +20,23 @@ public class Cart {
         }
     }
 
+    // public void addDigitalVideoDisc(DigitalVideoDisc[] discs) {
+    //     for (DigitalVideoDisc disc: discs) {
+    //         this.addDigitalVideoDisc(disc);
+    //     } 
+    // }
+
+    public void addDigitalVideoDisc(DigitalVideoDisc... discs) {
+        for (DigitalVideoDisc disc: discs) {
+            this.addDigitalVideoDisc(disc);
+        } 
+    }
+
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2) {
+        this.addDigitalVideoDisc(dvd1);
+        this.addDigitalVideoDisc(dvd2);
+    }
+
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         if (items.remove(disc)) {
             qtyOrdered--;
